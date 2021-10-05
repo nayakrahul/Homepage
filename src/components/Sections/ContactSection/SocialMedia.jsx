@@ -20,8 +20,8 @@ class SocialMedia extends React.Component {
     this.state = {
       socialMedias: [
       	{
-          'url': 'https:\//www.facebook.com/rahulnayak619',
-          'icon': 'fa fa-facebook fa-lg'
+          'url': 'https:\//twitter.com/SibylSytem',
+          'icon': 'fa fa-twitter fa-lg'
       	},
       	{
           'url': 'https:\//instagram.com/___rahul.nayak___/',
