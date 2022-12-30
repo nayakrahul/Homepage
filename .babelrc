@@ -1,12 +1,27 @@
+// .babelrc
+
 {
   "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
+      "@babel/preset-react",
+      [
+          "@babel/preset-env",
+          {
+              "targets": {
+                  "browsers": "last 2 versions"
+              },
+              "modules": false,
+              "loose": false
+          }
+      ]
   ],
   "plugins": [
-    ["@babel/plugin-proposal-class-properties", {"legacy": true}],
-    ["@babel/plugin-proposal-decorators", {"legacy": true}],
-    ["@babel/plugin-transform-react-constant-elements", {"legacy": true}],
-    ["@babel/plugin-transform-react-inline-elements", {"legacy": true}]
-  ]
+      "transform-class-properties"
+  ],
+  "env": {
+      "test": {
+          "plugins": [
+              "transform-es2015-modules-commonjs"
+          ]
+      }
+  }
 }

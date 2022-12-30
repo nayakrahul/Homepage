@@ -36,7 +36,7 @@ class SocialMedia extends React.Component {
           'icon': 'fa fa-github fa-lg'
       	},
       	{
-          'url': 'https://www.reddit.com/user/rahul12538',
+          'url': 'https://www.reddit.com/user/SibylPsycho',
           'icon': 'fa fa-reddit fa-lg'
       	},
       	{
