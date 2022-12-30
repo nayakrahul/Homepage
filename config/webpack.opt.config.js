@@ -1,17 +1,14 @@
 var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+var TerserPlugin  = require('terser-webpack-plugin');
+var path = require('path');
+
 
 module.exports = {
   optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        uglifyOptions: {
-          mangle: {
-            keep_fnames: true,
-          },
-        },
-      })
-    ],
+    minimize: true,
+        minimizer: [
+            new TerserPlugin(),
+        ],
   },
   plugins: [
     new OptimizeCssAssetsPlugin(),

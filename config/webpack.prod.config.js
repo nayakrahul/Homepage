@@ -13,4 +13,4 @@ const productionConfiguration = function (env) {
   };
 };
 
-module.exports = merge(baseConfig, optimizationConfig);
+module.exports = merge(baseConfig, optimizationConfig, productionConfiguration);
